@@ -39,5 +39,8 @@ public class Bloc implements Serializable {
     @OneToMany(mappedBy = "bloc")
     Set<Chambre> chambres;
 
+    public void setIdBloc(Long idBloc) {
+        this.idBloc = idBloc;
+    }
 
 }
